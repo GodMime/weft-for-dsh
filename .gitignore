@@ -1,0 +1,61 @@
+# 本地工作资料：AI 过程记录、调研、测试、设计草稿、运行数据。
+/.local/
+AGENTS.md
+CLAUDE.md
+.agents/
+.codex/
+.claude/
+.cursor/
+.aider*
+
+# 现有过程资料保留原路径，后续新增资料统一放入 .local/。
+/CONTEXT.md
+/research/
+/docs/requirements.md
+/docs/technical-design.md
+/docs/requirements-issues.md
+/docs/requirements-review-*.md
+/docs/brand/logo-brief-*.md
+/docs/brand/logo-v*/
+
+# 所有 dotenv 文件均保留本地，包括 .env.example；公开示例用 JSON/YAML。
+.env
+.env.*
+*.env
+*.env.*
+.envrc
+
+# 本地测试及产生的报告、缓存、日志。
+/tests/local/
+/local-tests/
+coverage/
+.nyc_output/
+.pytest_cache/
+test-results/
+playwright-report/
+blob-report/
+*.log
+
+# 依赖与构建产物；源码、构建脚本、依赖清单及锁文件正常提交。
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+*.tsbuildinfo
+.cache/
+/.turbo/
+/dist/
+/build/
+/out/
+/release/
+/packages/*/dist/
+/packages/*/build/
+
+# 本机系统与编辑器文件。
+.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
