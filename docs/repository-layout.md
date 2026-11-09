@@ -65,8 +65,7 @@ weft-for-dsh/                 # 公开仓库根目录
 私有仓库保留既有资料的相对目录结构，以维持内部文档、原型资源和验证脚本之间的引用。公开工作区中的下列历史路径可通过本机符号链接指向私有仓库中的同名路径，链接本身也被公开仓库忽略：
 
 - `AGENTS.md`、`CONTEXT.md` 与 `research/`。
-- `docs/requirements.md`、`docs/technical-design.md`、需求问题与复审记录。
-- `docs/brand/logo-brief-*.md` 与 `docs/brand/logo-v*/`。
+- `docs/requirements.md` 与 `docs/technical-design.md`。
 - `.local/ai/`、`.local/research/`、`.local/tests/` 与 `.local/design/`。
 
 克隆公开仓库不会包含私有资料或这些兼容链接。私有资料的克隆、链接恢复与提交方式由私有仓库自身说明维护。公开仓库的 Git worktree 同样不会自动携带被忽略的私有仓库，内部开发环境需单独接入相应资料。
