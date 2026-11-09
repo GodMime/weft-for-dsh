@@ -50,6 +50,8 @@ git -C .local/private remote -v
 
 两个工程分别执行 `add`、`commit` 和 `push`；在工作区根目录直接执行 Git 命令，默认操作公开工程。私有工程使用 `git -C .local/private ...`。环境文件、凭据与本机运行数据保留本地，不提交到任一工程。
 
+内部工作区的 `AGENTS.md` 和 `CLAUDE.md` 是 Agent 入口，由私有工程管理，并通过本地链接放到工作区根目录。`AGENTS.md` 统一维护两个工程的职责、文件归属、设计输入和 Git 操作约定；`CLAUDE.md` 导入这份规则，供 Claude Code 使用。
+
 ## 项目资料
 
 - [目录规划与提交范围](docs/repository-layout.md)

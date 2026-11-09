@@ -53,7 +53,7 @@ weft-for-dsh/                 # 公开仓库根目录
 | AI 过程记录与调研 | 私有资料仓库 | 私有仓库内的 `.local/ai/`、`.local/research/` 与历史 `research/` |
 | 本地测试与验证证据 | 私有资料仓库 | 私有仓库内的 `.local/tests/`，包括脚本、fixture、报告和截图 |
 | 设计过程、交互原型与历史提案 | 私有资料仓库 | 私有仓库内的 `.local/design/` 与历史品牌提案目录 |
-| Agent 工作约定 | 私有资料仓库 | 私有仓库内的 `AGENTS.md`；公开工作区通过本地兼容链接读取 |
+| Agent 工作约定 | 私有资料仓库 | 私有仓库内的 `AGENTS.md` 为统一规则，`CLAUDE.md` 导入它；公开工作区通过本地兼容链接读取两个入口 |
 | 环境变量、凭据、依赖缓存与运行数据 | 仅本机，不进入任一仓库 | dotenv 文件、凭据文件、缓存与 `.local/runtime/`；公开配置示例使用 JSON/YAML 占位值 |
 
 是否由 AI 生成不决定文件是否公开：AI 编写的产品代码和对外说明属于交付内容；对话、推理草稿、任务计划、内部审核与验证记录属于私有工作资料。
@@ -64,7 +64,7 @@ weft-for-dsh/                 # 公开仓库根目录
 
 私有仓库保留既有资料的相对目录结构，以维持内部文档、原型资源和验证脚本之间的引用。公开工作区中的下列历史路径可通过本机符号链接指向私有仓库中的同名路径，链接本身也被公开仓库忽略：
 
-- `AGENTS.md`、`CONTEXT.md` 与 `research/`。
+- `AGENTS.md`、`CLAUDE.md`、`CONTEXT.md` 与 `research/`。
 - `docs/requirements.md` 与 `docs/technical-design.md`。
 - `.local/ai/`、`.local/research/`、`.local/tests/` 与 `.local/design/`。
 
