@@ -1,4 +1,4 @@
-# 本地工作资料：AI 过程记录、调研、测试、设计草稿、运行数据。
+# 私有工作资料仓库与本机运行数据；私有仓库在自身目录内独立提交。
 /.local/
 AGENTS.md
 CLAUDE.md
@@ -8,15 +8,15 @@ CLAUDE.md
 .cursor/
 .aider*
 
-# 现有过程资料保留原路径，后续新增资料统一放入 .local/。
+# 历史路径作为指向 .local/private/ 的本地兼容链接，公开仓库继续忽略。
 /CONTEXT.md
-/research/
+/research
 /docs/requirements.md
 /docs/technical-design.md
 /docs/requirements-issues.md
 /docs/requirements-review-*.md
 /docs/brand/logo-brief-*.md
-/docs/brand/logo-v*/
+/docs/brand/logo-v*
 
 # 所有 dotenv 文件均保留本地，包括 .env.example；公开示例用 JSON/YAML。
 .env
